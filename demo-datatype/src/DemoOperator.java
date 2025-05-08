@@ -14,58 +14,61 @@ public class DemoOperator {
     int b = (y - 9) * 2;
     System.out.println(b); // 2
 
-    b = ((b -10) *2);
-    System.out.println(b);
+    b = ((b - 10) + 2) * 2;
+    System.out.println(b); // -12
 
     // divided by zero
-    // int r = 10 / 0; system error
+    // int r = 10 / 0; // system error
 
-    int r2 = 0 /10;
+    int r2 = 0 / 10;
     System.out.println(r2); // 0
 
-    // java: int / int -> int
-    int r3 = 10/3;
+    // Java: int / int -> int
+    int r3 = 10 / 3;
     System.out.println(r3);
 
     // int / int -> int
-    System.out.println(5 / 2); //2
-
+    System.out.println(5 / 2); // 2
     // double / int -> double / double -> double
-
+    System.out.println(5.0 / 2); // 2.5
+    System.out.println(5.0 / 2.0); // 2.5
 
     int score1 = 71;
     int score2 = 82;
-    System.out.println((score1 + score2)/2);
-
-    // ! (int + int) / int -> int
-    // ! (int + int) / double -> Double
+    // code here ...
+    // (int + int) / int -> int
+    // ! (int + int) / double -> double
     double averageScore = (score1 + score2) / 2.0;
     System.out.println(averageScore); // 76.5
 
     // Big problem
     double d5 = 0.1 + 0.2;
-    System.out.println(d5); // 0.3000000000004
+    System.out.println(d5); // 0.30000000000000004
 
     double d6 = 0.2 + 0.3;
     System.out.println(d6); // 0.5
 
-    // ! remainder () of 10 / 3
+    // ! remainder (餘數) of 10 / 3
     int r8 = 10 % 3;
     System.out.println(r8); // 1
 
-    // + 1 and - 1
+    int johnAge = 64;
+    boolean isElderly = johnAge >= 65; // formula / definition
+    System.out.println(isElderly); // false
+
+    // + 1 and -1
     int t = 0;
     t++;
     ++t;
     t = t + 1;
     // "= t +" -> "+="
     t += 1;
-    System.out.println(t); //4
+    System.out.println(t); // 4
 
     int w = 0;
     w--;
     --w;
-    w = w -1;
+    w = w - 1;
     w -= 1;
     System.out.println(w); // -4
 
@@ -73,7 +76,7 @@ public class DemoOperator {
     int o = 3;
     o -= 4;
     o += 4;
-    System.out.println(o); //3
+    System.out.println(o); // 3
 
     int q = 3;
     q = q * 3;
@@ -83,7 +86,7 @@ public class DemoOperator {
     int v = 27;
     v /= 3;
     v = v / 3;
-    System.out.println(v); //3
+    System.out.println(v); // 3
 
     // Comparison
     // >, <, >=, <=, ==, !=
@@ -92,6 +95,7 @@ public class DemoOperator {
     System.out.println(isGradeA); // true
 
     char gender = 'F';
-    boolean isFemale = gender
+    boolean isFemale = gender != 'M';
+    System.out.println(isFemale); // true
   }
 }
